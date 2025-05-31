@@ -4,7 +4,9 @@
 
 # dependencies
 /backend_backup
+/frontend_backup
 /node_modules
+/target
 /.pnp
 .pnp.js
 
