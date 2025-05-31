@@ -1,6 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-.idea/*
 
 # dependencies
 /backend_backup
@@ -9,6 +8,7 @@
 /target
 /.pnp
 .pnp.js
+.vscode/
 
 # testing
 /coverage
@@ -28,6 +28,8 @@ yarn-debug.log*
 yarn-error.log*
 backend/.idea/*
 frontend/.idea/*
-backend/.idea/*
+backend/.vscode/*
 frontend/.vscode/*
 backend/target/*
+backend/.idea/misc.xml
+backend/.idea/workspace.xml
