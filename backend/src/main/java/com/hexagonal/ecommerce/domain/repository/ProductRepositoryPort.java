@@ -12,5 +12,5 @@ public interface ProductRepositoryPort {
 
     Product updateProduct(ProductHexaEntity productHexaEntity);
 
-    void deleteProductById(String productId);
+    void deleteProductByProductId(String productId);
 }

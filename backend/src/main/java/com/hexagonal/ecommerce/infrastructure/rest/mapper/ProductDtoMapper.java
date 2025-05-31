@@ -3,8 +3,6 @@ package com.hexagonal.ecommerce.infrastructure.rest.mapper;
 import com.hexagonal.ecommerce.common.ProductDto;
 import com.hexagonal.ecommerce.domain.model.Product;
 
-import java.util.Arrays;
-
 public class ProductDtoMapper {
 
     public static ProductDto fromProductToDto(Product product) {

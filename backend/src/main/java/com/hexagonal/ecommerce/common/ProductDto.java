@@ -1,14 +1,16 @@
 package com.hexagonal.ecommerce.common;
 
+import java.math.BigDecimal;
+
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-
-import java.math.BigDecimal;
+import lombok.ToString;
 
 @EqualsAndHashCode
 @Getter
 @Setter
+@ToString
 public class ProductDto {
 
     private String productId;
@@ -22,5 +24,4 @@ public class ProductDto {
         this.description = description;
         this.price = PriceFormatter.formatPrice(price, currency);
     }
-    
 }
