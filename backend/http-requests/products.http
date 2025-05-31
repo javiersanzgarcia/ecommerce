@@ -1,0 +1,8 @@
+### Get product by id (vaquero)
+GET http://localhost:8080/hexagonal/products/vaquero-555
+
+### Get product by id (camiseta)
+GET http://localhost:8080/hexagonal/products/camiseta-333
+
+### Get all products
+GET http://localhost:8080/hexagonal/products/

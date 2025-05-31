@@ -3,6 +3,8 @@ package com.hexagonal.ecommerce.infrastructure.rest.mapper;
 import com.hexagonal.ecommerce.common.ProductDto;
 import com.hexagonal.ecommerce.domain.model.Product;
 
+import java.util.Arrays;
+
 public class ProductDtoMapper {
 
     public static ProductDto fromProductToDto(Product product) {
@@ -12,6 +14,14 @@ public class ProductDtoMapper {
                 product.getPrice(),
                 product.getCurrency()
         );
+    }
+
+    public static ProductDto[] fromProductsToDto(Product[] products) {
+        ProductDto[] productDtos = new ProductDto[products.length];
+        for (int i = 0; i < products.length; i++) {
+            productDtos[i] = fromProductToDto(products[i]);
+        }
+        return productDtos;
     }
 
 }

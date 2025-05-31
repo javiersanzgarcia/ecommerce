@@ -16,11 +16,24 @@ import java.util.NoSuchElementException;
 public class GlobalExceptionHandler {
 
     @ExceptionHandler(EntityNotFoundException.class)
-    public ResponseEntity<String> handleNoSuchElementException(NoSuchElementException exception, HttpServletRequest httpRequest) throws UnsupportedEncodingException {
+    public ResponseEntity<String> handleNoSuchElementException(NoSuchElementException exception, HttpServletRequest
+            httpRequest) throws UnsupportedEncodingException {
 
         log.info("NoSuchElementException (404) handled");
 
         return ResponseEntity.status(HttpStatus.NOT_FOUND)
                 .body("NOT FOUND, request: " + httpRequest.getRequestURI());
     }
+
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<String> handleIllegalArgumentException(IllegalArgumentException exception, HttpServletRequest
+            httpRequest) throws UnsupportedEncodingException {
+
+        log.info("IllegalArgumentException (400) handled");
+
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                .body("BAD REQUEST, request: " + httpRequest.getRequestURI());
+    }
+
+
 }

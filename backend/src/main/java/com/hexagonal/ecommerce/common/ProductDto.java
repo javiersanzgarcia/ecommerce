@@ -22,5 +22,5 @@ public class ProductDto {
         this.description = description;
         this.price = PriceFormatter.formatPrice(price, currency);
     }
-
+    
 }
