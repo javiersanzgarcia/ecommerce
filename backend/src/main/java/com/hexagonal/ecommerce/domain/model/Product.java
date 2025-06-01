@@ -20,4 +20,5 @@ public class Product {
     @NotNull
     @Pattern(regexp = "[$€]", message = "Currency must be either '$' or '€'")
     private String currency;
+
 }

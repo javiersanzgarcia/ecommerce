@@ -8,6 +8,5 @@ import java.util.UUID;
 
 public interface ProductJpaRepository extends JpaRepository<ProductHexaEntity, UUID> {
     Optional<ProductHexaEntity> findByProductId(String productId);
-
     void deleteByProductId(String productId);
 }

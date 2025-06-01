@@ -34,6 +34,5 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST)
                 .body("BAD REQUEST, request: " + httpRequest.getRequestURI());
     }
-
-
+    
 }

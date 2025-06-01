@@ -1,11 +1,11 @@
 package com.hexagonal.ecommerce.common;
 
-import java.math.BigDecimal;
-
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+
+import java.math.BigDecimal;
 
 @EqualsAndHashCode
 @Getter
