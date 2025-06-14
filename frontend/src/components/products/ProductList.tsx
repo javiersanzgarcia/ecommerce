@@ -1,5 +1,5 @@
-import useFetch from "@/hooks/useFetch";
-import { API } from "@/lib/constants";
+import useFetch from '@/hooks/useFetch';
+import { API } from '@/lib/constants';
 
 const ProductList = () => {
   const { data, loading, error } = useFetch(API.PRODUCTS);
