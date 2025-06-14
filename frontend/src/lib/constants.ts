@@ -6,3 +6,4 @@ export const API = {
   PRODUCTS: `${host}/hexagonal/products/`,
   PRODUCT: `${host}/hexagonal/products/:id`,
 };
+
