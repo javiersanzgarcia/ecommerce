@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "check-format": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,md}\"",
+    "check-format": "prettier --check \"**/*.{js,jsx,ts,tsx,css,scss,md}\"",
     "preview": "vite preview"
   },
   "dependencies": {

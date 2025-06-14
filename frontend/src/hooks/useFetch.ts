@@ -22,6 +22,7 @@ const useFetch = (url: string) => {
         console.error('useFetch error:', error);
       }
     };
+
     fetchData();
   }, [url]);
 
@@ -29,3 +30,4 @@ const useFetch = (url: string) => {
 };
 
 export default useFetch;
+
