@@ -33,3 +33,4 @@ frontend/.vscode/*
 backend/target/*
 backend/.idea/misc.xml
 backend/.idea/workspace.xml
+frontend/node_modules/*
