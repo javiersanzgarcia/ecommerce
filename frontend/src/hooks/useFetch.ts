@@ -31,3 +31,4 @@ const useFetch = (url: string) => {
 
 export default useFetch;
 
+// eslint-disable-next-line prettier/prettier
